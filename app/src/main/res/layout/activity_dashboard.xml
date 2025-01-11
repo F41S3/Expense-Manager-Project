@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:padding="12sp"
+    android:paddingTop="20sp">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20sp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Dashboard"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/iconButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/beige"
+            android:contentDescription="searching"
+            android:src="@drawable/search_icon" />
+    </LinearLayout>
+
+    <!--    separator of header form the list-->
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray_400"
+        android:layout_marginTop="55dp"/>
+
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="40sp"
+        android:layout_marginTop="70sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20sp">
+
+            <!-- personal spending -->
+            <LinearLayout
+                android:id="@+id/rectangle1"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/border_rectangle"
+                android:layout_marginRight="20px"
+                android:padding="40px">
+
+                <!-- Personal Spending text -->
+                <TextView
+                    android:id="@+id/oweText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="$2435"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+
+                <!-- personal Spending value -->
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Total Owing" />
+            </LinearLayout>
+
+            <!-- group spending-->
+            <LinearLayout
+                android:id="@+id/rectangle2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical"
+                android:background="@drawable/border_rectangle"
+                android:layout_marginLeft="20px"
+                android:padding="40px">
+
+                <!-- group spending value-->
+                <TextView
+                    android:id="@+id/owedText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="$2435"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+
+
+                <!-- group spending text-->
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Total Owed" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/groups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Groups"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10sp"/>
+
+        <Button
+            android:id="@+id/newGroupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_rectangle"
+            android:backgroundTint="@color/blueButton"
+            android:text="Create New Group"
+            android:textColor="@color/white"
+            android:padding="10sp"
+            android:textSize="18sp">
+        </Button>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/groupsList"
+        android:layout_width="match_parent"
+        android:layout_height="374dp"
+        android:layout_marginTop="275sp"
+        android:layout_marginBottom="70sp" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgrey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12sp"
+            >
+
+            <ImageButton
+                android:id="@+id/notificationIcon"
+                android:layout_width="0dp"
+                android:alpha="0.5"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:src="@drawable/notification"
+                android:background="@color/beige"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:contentDescription="notifications" />
+
+            <ImageButton
+                android:id="@+id/activityIcon"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:layout_height="50dp"
+                android:src="@drawable/restore"
+                android:background="@color/beige"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:contentDescription="activity" />
+
+            <ImageButton
+                android:id="@+id/groupIcon"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:src="@drawable/people"
+                android:background="@color/beige"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:contentDescription="group" />
+
+            <ImageButton
+                android:id="@+id/profileIcon"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:layout_height="50dp"
+                android:src="@drawable/user"
+                android:background="@color/beige"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:contentDescription="profile" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

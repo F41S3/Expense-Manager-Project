@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/beige"
+    android:layout_height="match_parent"
+    tools:context=".views.TransactionActivity"
+    android:padding="12sp"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/TransactionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/transactions"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/filterExpenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/black"
+        android:text="All Transactions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/TransactionLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/gray_400"
+        app:layout_constraintTop_toBottomOf="@+id/TransactionLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transactionRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TransactionLabel"
+        android:layout_marginBottom="70sp"/>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgrey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12sp"
+            >
+
+            <ImageButton
+                android:id="@+id/notificationIcon"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:background="@color/beige"
+                android:layout_height="50dp"
+                android:src="@drawable/notification"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:contentDescription="notifications" />
+
+            <ImageButton
+                android:id="@+id/activityIcon"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:background="@color/beige"
+                android:src="@drawable/restore"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:contentDescription="activity" />
+
+            <ImageButton
+                android:id="@+id/groupIcon"
+                android:layout_width="0dp"
+                android:alpha="0.5"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:src="@drawable/people"
+                android:background="@color/beige"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:contentDescription="group" />
+
+            <ImageButton
+                android:id="@+id/profileIcon"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:src="@drawable/user"
+                android:background="@color/beige"
+                android:alpha="0.5"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:contentDescription="profile" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

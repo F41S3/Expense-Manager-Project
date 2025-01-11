@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="@color/beige"
+    android:layout_height="fill_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundTint="#000000"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12sp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="102dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="56dp"
+                android:layout_toStartOf="@+id/discardExp"
+                android:text="New expense"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/discardExp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:background="@color/beige"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/baseline_close_24" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:padding="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of Expense"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <EditText
+                android:id="@+id/expenseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16sp"
+                android:drawableBottom="@null"
+                android:ems="10"
+                android:enabled="true"
+                android:hint="Expense name"
+                android:inputType="text"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="223dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="92dp" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16sp"
+                android:drawableBottom="@null"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="text"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="126dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="287dp" />
+
+            <EditText
+                android:id="@+id/amountInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16sp"
+                android:drawableBottom="@null"
+                android:ems="10"
+                android:hint="$0.00"
+                android:inputType="number|numberDecimal"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="323dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type of expense"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="287dp" />
+
+
+            <EditText
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16sp"
+                android:drawableBottom="@null"
+                android:ems="10"
+                android:enabled="true"
+                android:hint="Expense type"
+                android:inputType="text"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="223dp" />
+
+
+            <!-- Item layout: activity_add_exp_item.xml
+            Each item for this list will contain the name of a member
+            in the selected group followed by a checkmark that is checked by default-->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12sp"
+                android:text="Members"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="386dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/memberSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="162dp"
+                android:layout_marginBottom="12sp"
+                android:backgroundTint="@color/editTextBackground"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="418dp" />
+
+            <!-- Alternate expense splitting layout -->
+            <LinearLayout
+                android:id="@+id/splitOptionsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:layout_marginBottom="12sp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/memberSelect">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/splitGroup"
+                    android:gravity="center">
+                    <RadioButton
+                        android:id="@+id/evenSplitBtn"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"
+                        android:text="Even Split"/>
+                    <RadioButton
+                        android:id="@+id/exactSplitBtn"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"
+                        android:text="Exact Split"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Percentage input placeholder layout -->
+            <LinearLayout
+                android:id="@+id/percentageInputsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/splitOptionsContainer" />
+
+
+            <Button
+                android:id="@+id/submitExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:backgroundTint="@color/blueButton"
+                android:text="Add"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="609dp" />
+
+
+        </LinearLayout>
+        <!-- contains the name of the group that the expense is being added for
+     set programmatically and cannot be edited -->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "300630655842",
+    "firebase_url": "https://csci4176project-cbc40-default-rtdb.firebaseio.com",
+    "project_id": "csci4176project-cbc40",
+    "storage_bucket": "csci4176project-cbc40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300630655842:android:a58b57274e7e78045de23b",
+        "android_client_info": {
+          "package_name": "com.example.csci4176project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnHLAe53RWPwbA8eqI8uUl_bJ_Eqp8xvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

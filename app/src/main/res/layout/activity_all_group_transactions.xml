@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:padding="12sp"
+    android:paddingTop="20sp">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Group Name Transactions"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/discardGroup"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@color/beige"
+                android:contentDescription="Discard"
+                android:padding="6dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/baseline_close_24" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_400"/>
+
+    </LinearLayout>
+
+    <!-- code for the footer which is fixed below -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transactionList"
+        android:layout_width="388dp"
+        android:layout_height="567dp"
+        android:layout_weight="1"
+        android:translationY="80dp" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgrey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12sp"
+            >
+
+            <ImageButton
+                android:id="@+id/notificationIcon"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:layout_height="50dp"
+                android:src="@drawable/notification"
+                android:padding="8dp"
+                android:background="@color/beige"
+                android:scaleType="centerInside"
+                android:contentDescription="notifications" />
+
+            <ImageButton
+                android:id="@+id/activityIcon"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:background="@color/beige"
+                android:alpha="0.5"
+                android:src="@drawable/restore"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:contentDescription="activity" />
+
+            <ImageButton
+                android:id="@+id/groupIcon"
+                android:layout_width="0dp"
+                android:background="@color/beige"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:src="@drawable/people"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:contentDescription="group" />
+
+            <ImageButton
+                android:id="@+id/profileIcon"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:layout_height="50dp"
+                android:background="@color/beige"
+                android:src="@drawable/user"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:contentDescription="profile" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

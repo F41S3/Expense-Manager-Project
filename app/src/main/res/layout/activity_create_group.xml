@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/beige"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/headingCreateGrp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="New group"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/discardGroup"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/beige"
+            android:padding="6dp"
+            android:scaleType="fitXY"
+            android:contentDescription="Discard"
+            android:src="@drawable/baseline_close_24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.259">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group name"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12sp"
+            android:enabled="true"
+            android:hint="Group name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="136dp" />
+
+        <TextView
+            android:id="@+id/groupType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group type"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12sp"
+            android:minHeight="48dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="181dp" />
+
+        <TextView
+            android:id="@+id/inviteMembers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Invite Members"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <EditText
+            android:id="@+id/searchMemberText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Search Members"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:maxLines="1"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp">
+            <FrameLayout
+                android:id="@+id/usersList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/errorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FF0000" />
+
+        <Button
+            android:id="@+id/submitGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/buttonBackground"
+            android:text="Create"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="609dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

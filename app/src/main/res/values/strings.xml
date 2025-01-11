@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">CSCI4176project</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <!--  Currency Dropdown  -->
+    <string-array name="currencyOptions">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>CNY</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>NZD</item>
+    </string-array>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log in</string>
+    <string name="log_in_to_your_account">Log in to your account</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="if_you_do_not_have_an_account_please_sign_up">If you do not have an account, please sign up.</string>
+    <string name="need_an_account_sign_up_now">Need an account? Sign up now</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome">Welcome!</string>
+    <string name="please_sign_up_below">Please sign up below!</string>
+    <string name="re_enter_password">Re-Enter Password</string>
+    <string name="do_not_change_this_is_for_log_in">DO NOT CHANGE - THIS IS FOR LOG IN</string>
+    <string name="log_out">Log Out</string>
+    <string name="select_profile_picture">Select Profile Picture</string>
+    <string name="set_up_your_profile">Set Up Your Profile</string>
+    <string name="input_profile_name">Input profile name.</string>
+    <string name="select_currency">Select Currency</string>
+    <string name="submit">Submit</string>
+    <string name="complete_later">Complete Later</string>
+    <string name="notifications">Notifications</string>
+    <string name="transactions">Transactions</string>
+    <string name="auto_detect_currency">Auto Detect Currency</string>
+</resources>
