@@ -17,13 +17,21 @@ Expense Manager is a simple, intuitive, stable, and feature-rich expense trackin
 
 ### The Team
 [Aitzaz Qadir Khowaja](https://www.linkedin.com/in/aitzaz-qadir/)
+
 [Alexander Pettipas](https://www.linkedin.com/in/alexander-pettipas-277434277/)
+
 [Guenchen Zhu](https://www.linkedin.com/in/guanchen-zhu-a3121b1aa/?originalSubdomain=ca)
+
 [Jyotishka Ghosh](https://www.linkedin.com/in/guanchen-zhu-a3121b1aa/)
+
 [Mahdeen Abrar](https://www.linkedin.com/in/mahdeenabrar/)
+
 [Matin Ghodousi Hasanpour](https://www.linkedin.com/in/mghi/)
+
 [Nupur Gaikwad](https://www.linkedin.com/in/nupur-gaikwad-2447211a6/)
+
 [Vishwa Patel](https://www.linkedin.com/in/vishwa-patel-446aaa215/)
+
 
 ### Project Overview
 
