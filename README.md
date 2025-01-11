@@ -1,93 +1,86 @@
-# 4176 Expense Manager
+**Expense Manager README**
+==========================
 
+Table of Contents
+-----------------
 
+* [Introduction](#introduction)
+* [Project Overview](#project-overview)
+* [Features](#features)
+* [Technical Details](#technical-details)
+	+ [Programming Language and Development Environment](#programming-language-and-development-environment)
+	+ [Build Process and Dependencies](#build-process-and-dependencies)
 
-## Getting started
+### Introduction
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+Expense Manager is a simple, intuitive, stable, and feature-rich expense tracking app developed using Kotlin and Android Studio. The app allows users to control their spending, plan budgets, track expenses, and income.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+### The Team
+[Aitzaz Qadir Khowaja](https://www.linkedin.com/in/aitzaz-qadir/)
+[Alexander Pettipas](https://www.linkedin.com/in/alexander-pettipas-277434277/)
+[Guenchen Zhu](https://www.linkedin.com/in/guanchen-zhu-a3121b1aa/?originalSubdomain=ca)
+[Jyotishka Ghosh](https://www.linkedin.com/in/guanchen-zhu-a3121b1aa/)
+[Mahdeen Abrar](https://www.linkedin.com/in/mahdeenabrar/)
+[Matin Ghodousi Hasanpour](https://www.linkedin.com/in/mghi/)
+[Nupur Gaikwad](https://www.linkedin.com/in/nupur-gaikwad-2447211a6/)
+[Vishwa Patel](https://www.linkedin.com/in/vishwa-patel-446aaa215/)
 
-## Add your files
+### Project Overview
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+The Expense Manager project aims to provide a user-friendly interface for managing personal finances. It includes features such as:
 
-```
-cd existing_repo
-git remote add origin https://git.cs.dal.ca/mabrar/4176-expense-manager.git
-git branch -M main
-git push -uf origin main
-```
+*   **Expense Tracking**: Users can log their daily expenses with categories (e.g., food, transportation, entertainment).
+*   **Budget Planning**: The app allows users to set budgets and track progress.
+*   **Expense Splitting**: Users can add expenses and split bills between multiple different groups of people.
+*   **Income Tracking**: Users can record income from various sources.
 
-## Integrate with your tools
+### Features
 
-- [ ] [Set up project integrations](https://git.cs.dal.ca/mabrar/4176-expense-manager/-/settings/integrations)
+Here are some key features of the Expense Manager project:
 
-## Collaborate with your team
+*   Simple and intuitive user interface
+*   Expense categorization
+*   Budget planning with alerts for overspending
+*   Income tracking with automatic calculations
+*   Data storage in a secure database (Firebase)
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+### Technical Details
 
-## Test and Deploy
+#### Programming Language and Development Environment
 
-Use the built-in continuous integration in GitLab.
+The Expense Manager project is written in Kotlin, which is used for its concise syntax and modern language features. Android Studio serves as the primary development environment.
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+#### Build Process and Dependencies
 
-***
+To build the app, you will need:
 
-# Editing this README
+*   **Android Studio**: The official integrated development environment (IDE) for Android.
+*   **Kotlin**: A programming language developed by JetBrains that is used in this project.
+*   **Gradle**: A build tool used to manage dependencies and compile code.
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+The following libraries are included as part of the Expense Manager project:
 
-## Suggestions for a good README
+*   **Firebase** (for Firebase database management)
+*   **AndroidX** (for UI components)
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+### Getting Started
 
-## Name
-Choose a self-explaining name for your project.
+To start using the Expense Manager app, follow these steps:
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+1.  Clone this repository to your local machine.
+2.  Open Android Studio and create a new project based on the "Empty Activity" template.
+3.  Replace the existing code with the contents of this README file.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+**License**
+--------
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+This project is licensed under the MIT License, which allows you to use and distribute the app freely.
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+[MIT License](https://opensource.org/licenses/MIT)
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+Copyright (c) [2024] [Alex Pettipas]
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
